@@ -10,7 +10,7 @@ const scale = 3;
  * @param {Number} minPercent Minimum percentage required
  * @returns {Number}
  */
-export function score(rank, percent, minPercent, levelCount = 3) {
+export function score(rank, percent, minPercent, levelCount = 13) {
     const baseFactor = 0.0005832492374192035997815;
     const b = (levelCount - 1) * baseFactor;
     const a = 600 * Math.sqrt(b);
